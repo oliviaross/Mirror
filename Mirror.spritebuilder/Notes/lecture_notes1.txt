@@ -1,0 +1,59 @@
+SCOPE - how big is this project *actually*???
+
+WHAT YOU WANT TO MAKE VS. 
+What you'll TRY to make VS. 
+What you're actually going to make XD
+
+Things that take time:
+ - characters/sprite
+ - animations
+ - code
+ - polish
+ - level
+
+CODING - You need a good foundation!
+Make sure the entire game actually works!
+
+CONTENT - The stories! The levels!
+This takes so much damn time, do it as soon as possible...
+
+TESTING -  User testing!
+Get your game into people's hands!
+
+POLISH - Oooh, sparkly...
+For every action, there is a reaction. Professional quality!
+
+KICKSTART - Getting a lot of users quickly.
+Budget time to get large test base
+
+GOOD GAMES ARE SIMPLE, FUN, REMARKABLE
+MAKE THE GAME YOU THINK IS COOL
+
+Checklist:
+1. Would this game be simple enough for players to learn in under a minute?
+2. What is the core loop?
+3. Can you design a good control scheme for mobile? How long of a tutorial would you need?
+4. Would this game be simple enough to finish by August 15th?
+5. Consider coding, content, testing, tutorial, and polish.
+6. Would this game be fun?
+7. How similar is this game to an existing one?
+8. Would this game be remarkable?
+9. Would you play it? 
+
+Liam's Idea: A side scroller. There are gates with symbols on them, draw them as quickly as you can to advance.
+Olivia's Idea: A puzzle game. There is a line in the sand. What happens on this side of the line, will happen on the other side. Collect the keys and unlock the door to advance. 
+
+WHY AN MVP? 
+
+You're new, no one will remember your terrible first version.
+It's an expensive mistake to build features players don't use. 
+
+List the features you would want to implement immediately after launch/include in the initial launch. 
+
+There is a line on the sand, but you never cross the line. When you jump across, everything is exactly the same, simply flipped across the x & y axis. 
+
+IDEAS:
+Adventure puzzle game?
+Dungeons, rather than levels?
+
+Overworld, with many doors (leading to each level)? 

@@ -1,0 +1,14 @@
+A puzzle game where the user has to obtain the key to a door in order to move on to the next level. 
+Constants in each level:
+    - there is a door
+    - there is a key
+    - the player can jump to a certain height
+    - the player can move left and right
+    - there is an invisible line down the middle of the level
+        - things that happen on onside also happen on the other side, but flipped
+    - the player can only exit the level on one side of the door
+    - the door will not open without the key
+Level 1:
+    - key is already in the door
+    - player must get to the door
+
