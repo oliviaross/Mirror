@@ -63,7 +63,7 @@
 	<key>publishToZipFile</key>
 	<false/>
 	<key>resourceAutoScaleFactor</key>
-	<integer>4</integer>
+	<integer>1</integer>
 	<key>resourcePaths</key>
 	<array>
 		<dict>
@@ -162,6 +162,10 @@
 			<key>tabletScale</key>
 			<integer>1</integer>
 		</dict>
+		<key>myAssets/block.png</key>
+		<dict/>
+		<key>myAssets/jump1.png</key>
+		<dict/>
 	</dict>
 	<key>versionStr</key>
 	<string>revision : eea568a5c7

@@ -103,7 +103,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>myAssets/flower2.png</string>
+					<string>myAssets/brick.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -139,6 +139,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -215,6 +217,6 @@
 	<key>stageBorder</key>
 	<integer>3</integer>
 	<key>stageColor</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
