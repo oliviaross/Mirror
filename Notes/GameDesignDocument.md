@@ -5,7 +5,7 @@ Find the key and unlock the gate in each level to clear them. Levels should feat
 
 ## Gameplay Mechanics
 
-![Gameplay Loop Diagram](~/Notes/gameplayloops.png)
+![Gameplay Loop Diagram](https://github.com/oliviaiscool/Mirror/blob/master/Notes/gameplayloops.png)
 
 The game follows the physics of a basic platformer for the most part, in which the hero can jump and move left and right. The world contains the player, platforms and objects (e.g. keys, movable objects/boxes, gates). Most objects are not affected by gravity. Movable objects are an exception.
 
