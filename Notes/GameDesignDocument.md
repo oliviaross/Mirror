@@ -40,11 +40,11 @@ _An example: a key hovers overhead in the air, trapped inside a box. You jump, t
     * Gameplay
 * Nodes/Sprites
     * Hero
-    * WorldObject (abstract superclass)
-        * Keys
-        * Ground
-        * Movable Boxes
-        * Gates
+    * WorldObject
+        * Keys [Sprites]
+        * Ground [Sprites]
+        * Movable Boxes [Nodes]
+        * Gates [Sprites]
 
 ## MVP Milestones
 * Week 1 (7/7 - 7/11/2014)
