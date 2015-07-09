@@ -48,8 +48,20 @@ _An example: a key hovers overhead in the air, trapped inside a box. You jump, t
 
 ## MVP Milestones
 * Week 1 (7/7 - 7/11/2014)
+  * Finish controls and make sure the buttons work as they were intended to
+  * Start working on the mirror thingie
 * Week 2 (7/14 - 7/18/2014) - finishing a playable build
+  * Finish the mirror thingie
+  * Create levels 1-5
 * Week 3 (7/21 - 7/25/2014)
+  * Make a tutorial!
+  * Add levels (you should be able to do this easily)
 * Week 4 (7/28 - 8/1/2014) - finishing core gameplay
+  * Create the level select page*
+  * Find better sprites*
+  * Incorporate the story into the puzzle?
 * Week 5 (8/4 - 8/8/2014)
+  * Add animations to the gate at the end of the level
+  * Add animations to the keys
 * Week 6 (8/11 - 8/15/2014) - finishing the polish
+  * Tie up loose ends
