@@ -1,5 +1,10 @@
 import Foundation
 
-class MainScene: CCNode {
+class MainScene: CCScene {
 
+    func startGame() {
+        let gameplayScene = CCBReader.loadAsScene("Scenes/Gameplay")
+        CCDirector.sharedDirector().presentScene(gameplayScene)
+
+    }
 }

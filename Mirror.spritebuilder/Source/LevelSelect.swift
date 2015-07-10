@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class LevelSelect: CCNode {
+class LevelSelect: CCScene {
    
 }

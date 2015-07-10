@@ -6,8 +6,18 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Hero: CCSprite {
-   
+    func moveLeft() {
+        position.x += 10
+    }
+    
+    func moveRight() {
+        position.x -= 10
+    }
+    
+    func jump() {
+        print("We jumped!")
+    }
 }

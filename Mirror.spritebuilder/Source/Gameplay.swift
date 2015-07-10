@@ -6,8 +6,15 @@
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Gameplay: CCNode {
-   
+class Gameplay: CCScene{
+    
+    weak var hero: Hero!
+    weak var gamePhysicsNode: CCPhysicsNode!
+    
+    func didLoadFromCCB(){
+        userInteractionEnabled = true
+        gamePhysicsNode.collisionDelegate = self
+    }
 }
