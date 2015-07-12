@@ -10,6 +10,7 @@
 		2101F3DB1B4EB7D400B7DF72 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101F3DA1B4EB7D400B7DF72 /* Gameplay.swift */; };
 		2101F3E11B4EB80200B7DF72 /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101F3E01B4EB80200B7DF72 /* LevelSelect.swift */; };
 		2101F3E31B4EB82D00B7DF72 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101F3E21B4EB82D00B7DF72 /* Hero.swift */; };
+		21DA80A41B5054BD00B89C27 /* Gate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA80A31B5054BC00B89C27 /* Gate.swift */; };
 		5B121030197484FA004C1E1D /* MirrorActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* MirrorActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -154,6 +155,7 @@
 		2101F3DA1B4EB7D400B7DF72 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gameplay.swift; path = Source/Gameplay.swift; sourceTree = "<group>"; };
 		2101F3E01B4EB80200B7DF72 /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSelect.swift; path = Source/LevelSelect.swift; sourceTree = "<group>"; };
 		2101F3E21B4EB82D00B7DF72 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		21DA80A31B5054BC00B89C27 /* Gate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gate.swift; path = Source/Gate.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 			children = (
 				2101F3DA1B4EB7D400B7DF72 /* Gameplay.swift */,
 				2101F3E01B4EB80200B7DF72 /* LevelSelect.swift */,
+				21DA80A31B5054BC00B89C27 /* Gate.swift */,
 				2101F3E21B4EB82D00B7DF72 /* Hero.swift */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -823,6 +826,7 @@
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
 				2101F3DB1B4EB7D400B7DF72 /* Gameplay.swift in Sources */,
+				21DA80A41B5054BD00B89C27 /* Gate.swift in Sources */,
 				2101F3E11B4EB80200B7DF72 /* LevelSelect.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,

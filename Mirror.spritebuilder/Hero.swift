@@ -14,10 +14,10 @@ class Hero: CCSprite {
     }
     
     func moveRight() {
-        position.x -= 10
+       position.x -= 10
     }
     
     func jump() {
-        print("We jumped!")
+        self.physicsBody.applyImpulse(CGPoint(x: 0, y: 2000))
     }
 }
