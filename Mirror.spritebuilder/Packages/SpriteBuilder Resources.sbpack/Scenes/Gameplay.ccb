@@ -72,7 +72,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>-4</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -177,8 +177,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
-									<real>15</real>
+									<real>0.0</real>
+									<real>29</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -239,8 +239,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>103.80729675292969</real>
-									<real>63.338432312011719</real>
+									<real>100.80729675292969</real>
+									<real>94.338432312011719</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -370,7 +370,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>rightButton</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -393,7 +393,7 @@
 						<key>value</key>
 						<array>
 							<real>87.807296752929688</real>
-							<real>7.3384313583374023</real>
+							<real>15.338434219360352</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -709,7 +709,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>leftButton</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -732,7 +732,7 @@
 						<key>value</key>
 						<array>
 							<real>27.304004669189453</real>
-							<real>19.338432312011719</real>
+							<real>27.338434219360352</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1061,7 +1061,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>jumpButton</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -1084,7 +1084,7 @@
 						<key>value</key>
 						<array>
 							<real>531.99993896484375</real>
-							<real>26</real>
+							<real>35.338432312011719</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1111,8 +1111,16 @@
 							<real>1</real>
 							<real>1</real>
 							<false/>
-							<integer>0</integer>
+							<integer>1</integer>
 						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>rotation</string>
+						<key>type</key>
+						<string>Degrees</string>
+						<key>value</key>
+						<real>180</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1178,7 +1186,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>myAssets/gem.png</string>
+							<string>myAssets/spike2.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1461,8 +1469,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
