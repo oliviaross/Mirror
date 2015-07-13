@@ -325,7 +325,6 @@
 		7A40362019DDEF0D007B6E8F /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
-				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				7A40362119DDF08C007B6E8F /* iOS */,
 				7A40362219DDF090007B6E8F /* Android */,
 				7A9791C019E6FAC5001FFC4D /* Mac */,
@@ -444,9 +443,10 @@
 			isa = PBXGroup;
 			children = (
 				2101F3DA1B4EB7D400B7DF72 /* Gameplay.swift */,
-				2101F3E01B4EB80200B7DF72 /* LevelSelect.swift */,
 				21DA80A31B5054BC00B89C27 /* Gate.swift */,
 				2101F3E21B4EB82D00B7DF72 /* Hero.swift */,
+				2101F3E01B4EB80200B7DF72 /* LevelSelect.swift */,
+				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);

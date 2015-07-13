@@ -17,5 +17,21 @@ class Gameplay: CCScene{
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
     }
+    
+    func moveLeft() {
+        hero.position.x -= 10
+        hero.animationManager.runAnimationsForSequenceNamed("WalkingRight")
+
+    }
+    
+    func moveRight() {
+        hero.position.x += 10
+        hero.animationManager.runAnimationsForSequenceNamed("WalkingLeft")
+    }
+    
+    func jump() {
+        hero.animationManager.runAnimationsForSequenceNamed("Jumping")
+        hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 200))
+    }
 
 }
