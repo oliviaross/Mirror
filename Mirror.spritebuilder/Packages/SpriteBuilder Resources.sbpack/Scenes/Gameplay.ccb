@@ -436,6 +436,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>continuous</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>preferredSize</string>
 						<key>type</key>
 						<string>Size</string>
@@ -499,7 +507,7 @@
 						<array>
 							<real>0.0</real>
 							<real>1</real>
-							<real>0.85559773445129395</real>
+							<real>1</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -511,7 +519,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>myAssets/spike4.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -535,7 +543,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>myAssets/spike4.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -554,7 +562,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>myAssets/spike4.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -775,6 +783,14 @@
 					</dict>
 					<dict>
 						<key>name</key>
+						<string>continuous</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>name</key>
 						<string>preferredSize</string>
 						<key>type</key>
 						<string>Size</string>
@@ -863,7 +879,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>myAssets/spike3.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -887,7 +903,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>myAssets/spike3.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -906,7 +922,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>myAssets/spike3.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1050,6 +1066,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1202,7 +1220,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>myAssets/gem.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1226,7 +1244,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>myAssets/gem.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1245,7 +1263,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>myAssets/gem.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1461,8 +1479,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
