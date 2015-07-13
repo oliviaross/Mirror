@@ -39,7 +39,7 @@ class Gameplay: CCScene{
     
     override func update(delta: CCTime) {
         if rightButton.highlighted {
-            hero.position.x += 0.5
+            hero.position.x += 3
             
             if rightButtonPreviousState == false {
                 hero.animationManager.runAnimationsForSequenceNamed("WalkingRight")
@@ -52,7 +52,7 @@ class Gameplay: CCScene{
         }
         
         if leftButton.highlighted {
-            hero.position.x -= 0.5
+            hero.position.x -= 3
             
             if leftButtonPreviousState == false {
                 hero.animationManager.runAnimationsForSequenceNamed("WalkingLeft")
