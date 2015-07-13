@@ -14,6 +14,7 @@ class Gameplay: CCScene{
     weak var gamePhysicsNode: CCPhysicsNode!
     weak var rightButton: CCButton!
     weak var leftButton: CCButton!
+    weak var jumpButton: CCButton!
     var rightButtonPreviousState = false
     var leftButtonPreviousState = false
     
@@ -61,6 +62,20 @@ class Gameplay: CCScene{
         } else {
             if leftButtonPreviousState == true{
                 hero.animationManager.runAnimationsForSequenceNamed("Idling")
+            }
+        }
+        
+        
+        if jumpButton.highlighted {
+            if rightButtonPreviousState == true {
+                hero.animationManager.runAnimationsForSequenceNamed("Jumping")
+                hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 100))//jump, play the jumping animation flipped
+            } else if leftButtonPreviousState == true {
+                hero.animationManager.runAnimationsForSequenceNamed("Jumping")
+                hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 100)) //jump, play the jumping animation normally
+            } else {
+                hero.animationManager.runAnimationsForSequenceNamed("Jumping")
+                hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 100)) //jump, play the jumping animation flipped, because no actions have occurred yet
             }
         }
         
