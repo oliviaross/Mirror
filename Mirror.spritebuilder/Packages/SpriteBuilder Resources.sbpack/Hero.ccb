@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>3</integer>
+	<integer>23</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -198,6 +198,31 @@
 			</dict>
 			<key>2</key>
 			<dict>
+				<key>opacity</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>1</integer>
+							</dict>
+							<key>name</key>
+							<string>opacity</string>
+							<key>time</key>
+							<real>0.26666668057441711</real>
+							<key>type</key>
+							<integer>10</integer>
+							<key>value</key>
+							<real>1</real>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>opacity</string>
+					<key>type</key>
+					<integer>10</integer>
+				</dict>
 				<key>spriteFrame</key>
 				<dict>
 					<key>keyframes</key>
@@ -429,6 +454,8 @@
 		<string>Hero</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
+		<key>hidden</key>
+		<true/>
 		<key>memberVarAssignmentName</key>
 		<string></string>
 		<key>memberVarAssignmentType</key>
@@ -574,6 +601,16 @@
 				</array>
 			</dict>
 			<dict>
+				<key>baseValue</key>
+				<real>1</real>
+				<key>name</key>
+				<string>opacity</string>
+				<key>type</key>
+				<string>Float</string>
+				<key>value</key>
+				<real>1</real>
+			</dict>
+			<dict>
 				<key>name</key>
 				<string>color</string>
 				<key>type</key>
@@ -588,17 +625,6 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>flip</string>
-				<key>type</key>
-				<string>Flip</string>
-				<key>value</key>
-				<array>
-					<true/>
-					<false/>
-				</array>
-			</dict>
-			<dict>
-				<key>name</key>
 				<string>effects</string>
 				<key>type</key>
 				<string>EffectControl</string>
@@ -606,6 +632,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>
@@ -727,7 +755,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>length</key>
 			<real>0.66666668653488159</real>
 			<key>name</key>
@@ -763,7 +791,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>0</integer>
+			<integer>3</integer>
 			<key>length</key>
 			<real>0.83333331346511841</real>
 			<key>name</key>

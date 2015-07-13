@@ -206,8 +206,6 @@
 								<string>Levels/Level1.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -374,7 +372,7 @@
 				<key>displayName</key>
 				<string>rightButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>rightButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -721,7 +719,7 @@
 				<key>displayName</key>
 				<string>leftButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>leftButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1068,6 +1066,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
