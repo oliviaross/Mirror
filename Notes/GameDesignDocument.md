@@ -40,28 +40,27 @@ _An example: a key hovers overhead in the air, trapped inside a box. You jump, t
     * Gameplay
 * Nodes/Sprites
     * Hero
-    * WorldObject
-        * Keys [Sprites]
-        * Ground [Sprites]
-        * Movable Boxes [Nodes]
-        * Gates [Sprites]
+    * WorldObject (abstract superclass)
+        * Keys
+        * Ground
+        * Movable Boxes
+        * Gates
 
 ## MVP Milestones
 * Week 1 (7/7 - 7/11/2014)
-  * Finish controls and make sure the buttons work as they were intended to
-  * Start working on the mirror thingie
+  - [x] Finish controls and make sure the buttons work as they were intended to
+    - [ ] Put a delay before the physics impulse is applied(for the jump only)
+  - [ ] Start working on the mirror thingie
+  - [x] Draw and confirm ideas for the hero
 * Week 2 (7/14 - 7/18/2014) - finishing a playable build
-  * Finish the mirror thingie
-  * Create levels 1-5
+  - [ ] Finish the mirror thingie
+  - [ ] Design and draw stage 1 for a paper prototype
 * Week 3 (7/21 - 7/25/2014)
-  * Make a tutorial!
-  * Add levels (you should be able to do this easily)
+  - [ ] Finish animations for the hero
+  - [ ] Implement stage 1
 * Week 4 (7/28 - 8/1/2014) - finishing core gameplay
-  * Create the level select page*
-  * Find better sprites*
-  * Incorporate the story into the puzzle?
+  - [ ] Put the story into the puzzle
 * Week 5 (8/4 - 8/8/2014)
-  * Add animations to the gate at the end of the level
-  * Add animations to the keys
+  - [ ] Add more animations for polish
 * Week 6 (8/11 - 8/15/2014) - finishing the polish
-  * Tie up loose ends
+  - [ ] Do anything else that needs doing XD
