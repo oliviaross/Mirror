@@ -49,8 +49,6 @@ _An example: a key hovers overhead in the air, trapped inside a box. You jump, t
 ## MVP Milestones
 * Week 1 (7/7 - 7/11/2014)
   - [x] Finish controls and make sure the buttons work as they were intended to
-    - [ ] Put a delay before the physics impulse is applied (for the jump only)
-    - [ ] Make it so that you keep moving in a certain direction until the button is not being pressed (except when jumping)
   - [ ] Start working on the mirror thingie
   - [x] Draw and confirm ideas for the hero
 * Week 2 (7/14 - 7/18/2014) - finishing a playable build
