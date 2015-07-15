@@ -8,45 +8,51 @@
 
 import Foundation
 
-class Gameplay: CCScene{
+class Gameplay: CCScene, CCPhysicsCollisionDelegate{
+    
+    enum whichSide {
+        case Left
+        case Right
+    }
     
     weak var hero: Hero!
     weak var gamePhysicsNode: CCPhysicsNode!
+    weak var landscape: CCNode!
+    weak var landscapeFLIP: CCNode!
+//    weak var leftWall: CCNode!
+//    weak var rightWall: CCNode!
+    var Side = whichSide.Left
+    
     weak var rightButton: CCButton!
     weak var leftButton: CCButton!
-    var rightButtonPreviousState = false
-    var leftButtonPreviousState = false
-    
+    var isRightButtonHilighted = false
+    var isLeftButtonHilighted = false
+ 
     func didLoadFromCCB(){
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
-    }
-    
-    func moveLeft() {
-        hero.position.x -= 0.5
-        hero.animationManager.runAnimationsForSequenceNamed("WalkingLeft")
-    }
-    
-    func moveRight() {
-        hero.position.x += 0.5
-        hero.animationManager.runAnimationsForSequenceNamed("WalkingRight")
+        
+        landscape.visible = true
+        landscapeFLIP.visible = false
+        
     }
     
     func jump() {
-            hero.animationManager.runAnimationsForSequenceNamed("Jumping")
-            hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 100))
+        hero.animationManager.runAnimationsForSequenceNamed("Jumping")
+        hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 200))
     }
     
+
     override func update(delta: CCTime) {
         if rightButton.highlighted {
             hero.position.x += 3
             
-            if rightButtonPreviousState == false {
+            if isRightButtonHilighted == false {
                 hero.animationManager.runAnimationsForSequenceNamed("WalkingRight")
             }
             
         } else {
-            if rightButtonPreviousState == true{
+            if isRightButtonHilighted == true{
                 hero.animationManager.runAnimationsForSequenceNamed("Idling")
             }
         }
@@ -54,17 +60,41 @@ class Gameplay: CCScene{
         if leftButton.highlighted {
             hero.position.x -= 3
             
-            if leftButtonPreviousState == false {
+            if isLeftButtonHilighted == false {
                 hero.animationManager.runAnimationsForSequenceNamed("WalkingLeft")
             }
             
         } else {
-            if leftButtonPreviousState == true{
+            if isLeftButtonHilighted == true{
                 hero.animationManager.runAnimationsForSequenceNamed("Idling")
             }
         }
         
-        rightButtonPreviousState = rightButton.highlighted
-        leftButtonPreviousState = leftButton.highlighted
+        isRightButtonHilighted = rightButton.highlighted
+        isLeftButtonHilighted = leftButton.highlighted
     }
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, wall: CCNode!) -> Bool {
+        if Side == whichSide.Left {
+            landscape.visible = false
+            landscape.removeFromParent()
+            
+            landscapeFLIP.visible = true
+            landscapeFLIP.addChild(gamePhysicsNode)
+        } else {
+            landscape.visible = true
+            landscape.addChild(gamePhysicsNode)
+            landscapeFLIP.visible = false
+            landscapeFLIP.removeFromParent()
+        }
+        
+        if landscape.visible {
+            Side = whichSide.Left
+        } else if landscapeFLIP.visible {
+            Side = whichSide.Right
+        }
+        
+        return true
+    }
+ 
 }
