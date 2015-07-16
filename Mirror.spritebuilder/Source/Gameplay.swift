@@ -10,40 +10,44 @@ import Foundation
 
 class Gameplay: CCScene, CCPhysicsCollisionDelegate{
     
-    enum whichSide {
-        case Left
-        case Right
-    }
-    
     weak var hero: Hero!
+
+    weak var contentNode: CCNode!
     weak var gamePhysicsNode: CCPhysicsNode!
-    weak var landscape: CCNode!
-    weak var landscapeFLIP: CCNode!
-//    weak var leftWall: CCNode!
-//    weak var rightWall: CCNode!
-    var Side = whichSide.Left
-    
+    weak var levelOneNode: CCNode!
+
+
+
     weak var rightButton: CCButton!
     weak var leftButton: CCButton!
     var isRightButtonHilighted = false
     var isLeftButtonHilighted = false
+    
  
     func didLoadFromCCB(){
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
         
-        landscape.visible = true
-        landscapeFLIP.visible = false
-        
     }
     
-    func jump() {
+    override func onEnter(){
+        super.onEnter()
+        
+        //set up camera with CCActionFollow
+        let actionFollow = CCActionFollow(target: hero, worldBoundary: levelOneNode.boundingBox())
+        contentNode.runAction(actionFollow)
+
+    }
+    
+    func jump(){
+        // run jumping annimation while pushing the character up in the air with physics
         hero.animationManager.runAnimationsForSequenceNamed("Jumping")
         hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 200))
     }
     
 
-    override func update(delta: CCTime) {
+    override func update(delta: CCTime){
+        //allow user to walk right as long as they are holding down the right button
         if rightButton.highlighted {
             hero.position.x += 3
             
@@ -56,7 +60,7 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
                 hero.animationManager.runAnimationsForSequenceNamed("Idling")
             }
         }
-        
+        //allow user to walk left as long as they are holding down the left button
         if leftButton.highlighted {
             hero.position.x -= 3
             
@@ -75,26 +79,18 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
     }
     
     func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, wall: CCNode!) -> Bool {
-        if Side == whichSide.Left {
-            landscape.visible = false
-            landscape.removeFromParent()
+        //make it look as if the player is walking on a continuos loop
+        if hero.position.x > 1000 {
             
-            landscapeFLIP.visible = true
-            landscapeFLIP.addChild(gamePhysicsNode)
-        } else {
-            landscape.visible = true
-            landscape.addChild(gamePhysicsNode)
-            landscapeFLIP.visible = false
-            landscapeFLIP.removeFromParent()
-        }
+            hero.position.x -= 1100
+            
+        } else if hero.position.x < 200 {
+            
+            hero.position.x += 1100
         
-        if landscape.visible {
-            Side = whichSide.Left
-        } else if landscapeFLIP.visible {
-            Side = whichSide.Right
         }
-        
+
         return true
     }
- 
+    
 }
