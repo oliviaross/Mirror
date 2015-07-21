@@ -17,11 +17,13 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
     weak var levelOneNode: CCNode!
 
 
-
     weak var rightButton: CCButton!
     weak var leftButton: CCButton!
     var isRightButtonHilighted = false
     var isLeftButtonHilighted = false
+    
+    weak var key: CCSprite!
+    var hasKey = false
     
  
     func didLoadFromCCB(){
@@ -36,6 +38,7 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
         //set up camera with CCActionFollow
         let actionFollow = CCActionFollow(target: hero, worldBoundary: levelOneNode.boundingBox())
         contentNode.runAction(actionFollow)
+        key.physicsBody.sensor = true
 
     }
     
@@ -93,4 +96,19 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
         return true
     }
     
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, key: CCSprite!) -> Bool {
+        // allow the user to pick up the key
+        key.visible = false
+        hasKey = true
+        return true
+    }
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, door: CCNode!) -> Bool {
+        if hasKey {
+            println("You have won the game!")
+            return true
+        } else {
+            return false
+        }
+    }
 }
