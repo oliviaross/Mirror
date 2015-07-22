@@ -7,4 +7,10 @@ class MainScene: CCScene {
         CCDirector.sharedDirector().presentScene(gameplayScene)
 
     }
+    
+    func goToLevelSelect() {
+        let levelSelect = CCBReader.loadAsScene("Scenes/LevelSelect")
+        CCDirector.sharedDirector().presentScene(levelSelect)
+        
+    }
 }

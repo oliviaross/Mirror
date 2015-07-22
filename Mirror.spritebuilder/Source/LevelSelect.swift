@@ -9,5 +9,10 @@
 import Foundation
 
 class LevelSelect: CCScene {
-   
+    
+    func backToStart() {
+        let mainScene = CCBReader.loadAsScene("Scenes/MainScene")
+        CCDirector.sharedDirector().presentScene(mainScene)
+        
+    }
 }

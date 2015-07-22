@@ -38,97 +38,18 @@
 		<key>animatedProperties</key>
 		<dict>
 			<key>0</key>
-			<dict>
-				<key>spriteFrame</key>
-				<dict>
-					<key>keyframes</key>
-					<array>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.23333333432674408</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>Best Assets/door1.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.66666668653488159</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>Best Assets/door2.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>1.1666666269302368</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>Best Assets/door3.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>1.6333333253860474</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>Best Assets/door4.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-					</array>
-					<key>name</key>
-					<string>spriteFrame</string>
-					<key>type</key>
-					<integer>7</integer>
-				</dict>
-			</dict>
+			<dict/>
+			<key>2</key>
+			<dict/>
+			<key>3</key>
+			<dict/>
 		</dict>
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Gate</string>
+		<string>TheHero</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -140,7 +61,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<true/>
+			<false/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -148,13 +69,13 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string>door</string>
+			<string>hero</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<false/>
+			<true/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
@@ -162,40 +83,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>14.73443603515625</real>
-					<real>3.2773590087890625</real>
+					<real>-0.32982972264289856</real>
+					<real>14.597485542297363</real>
 				</array>
 				<array>
-					<real>12.77740478515625</real>
-					<real>68.792999267578125</real>
+					<real>14.322258949279785</real>
+					<real>14.437747001647949</real>
 				</array>
 				<array>
-					<real>44.90631103515625</real>
-					<real>69.183624267578125</real>
+					<real>14.861284255981445</real>
+					<real>-0.54290348291397095</real>
 				</array>
 				<array>
-					<real>47.55865478515625</real>
-					<real>2.5390777587890625</real>
+					<real>-0.3548126220703125</real>
+					<real>-0.41647490859031677</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>47.55865478515625</real>
-						<real>2.5390777587890625</real>
+						<real>-0.3548126220703125</real>
+						<real>-0.41647490859031677</real>
 					</array>
 					<array>
-						<real>44.90631103515625</real>
-						<real>69.183624267578125</real>
+						<real>14.861284255981445</real>
+						<real>-0.54290348291397095</real>
 					</array>
 					<array>
-						<real>12.77740478515625</real>
-						<real>68.792999267578125</real>
+						<real>14.322258949279785</real>
+						<real>14.437747001647949</real>
 					</array>
 					<array>
-						<real>14.73443603515625</real>
-						<real>3.2773590087890625</real>
+						<real>-0.32982972264289856</real>
+						<real>14.597485542297363</real>
 					</array>
 				</array>
 			</array>
@@ -249,11 +170,6 @@
 				</array>
 			</dict>
 			<dict>
-				<key>baseValue</key>
-				<array>
-					<string>Best Assets/door1.png</string>
-					<string>Use regular file</string>
-				</array>
 				<key>name</key>
 				<string>spriteFrame</string>
 				<key>type</key>
@@ -261,7 +177,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Best Assets/door1.png</string>
+					<string>Best Assets/robo-sprite1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -272,7 +188,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Best Assets/door1.png</string>
+					<string>Best Assets/robo-sprite1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -348,19 +264,19 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>2</real>
+			<real>0.83333331346511841</real>
 			<key>name</key>
-			<string>DoorOpening</string>
+			<string>WalkingLeft</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.1666666716337204</real>
+			<real>0.83333331346511841</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>74.682586669921875</real>
+			<real>128</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
 			<key>soundChannel</key>
@@ -388,7 +304,7 @@
 			<key>length</key>
 			<real>10</real>
 			<key>name</key>
-			<string>Default Animation</string>
+			<string>Idling</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
@@ -409,10 +325,82 @@
 				<integer>11</integer>
 			</dict>
 		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>2</integer>
+			<key>length</key>
+			<real>0.63333332538604736</real>
+			<key>name</key>
+			<string>WalkingRight</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.033333335071802139</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>2</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>-1</integer>
+			<key>length</key>
+			<real>0.69999998807907104</real>
+			<key>name</key>
+			<string>Jumping</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.066666670143604279</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>3</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
 	</array>
 	<key>stageBorder</key>
 	<integer>3</integer>
 	<key>stageColor</key>
-	<integer>2</integer>
+	<integer>3</integer>
 </dict>
 </plist>
