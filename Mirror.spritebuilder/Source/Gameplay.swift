@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Gameplay: CCScene, CCPhysicsCollisionDelegate{
+class Gameplay: CCNode, CCPhysicsCollisionDelegate{
     
     weak var hero: TheHero!
     weak var gate: Gate!
@@ -37,18 +37,21 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
     
  
     func didLoadFromCCB(){
-        
+
+      
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
         
 //        visualize physics bodies & joints
-        gamePhysicsNode.debugDraw = true
-        
+//        gamePhysicsNode.debugDraw = true
+      
         pitOfDespair.physicsBody.sensor = true
+        gate.physicsBody.sensor = true
         key.physicsBody.sensor = true
         keyLabel.visible = false
+
     }
-    
+  
     override func onEnter(){
         super.onEnter()
         
@@ -121,15 +124,17 @@ class Gameplay: CCScene, CCPhysicsCollisionDelegate{
         return true
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, door: CCSprite!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, gate: Gate!) -> Bool {
+
         if hasKey {
             //play the unlocking door animation
             gate.animationManager.runAnimationsForSequenceNamed("DoorOpening")
-            
-            sleep(4)
+            //wait for four seconds while the animation plays
+            var delay = CCActionDelay(duration: 4)
             //go back to the main screen
-            backToStart()
-            //don't actually collide and push them back
+            var goBack = CCActionCallBlock(block: {self.backToStart()})
+            runAction(CCActionSequence(array: [delay, goBack]))
+            //it has to return something, and we don't want it to return
             return false
         } else {
             //just don't collide if the user didn't get the key

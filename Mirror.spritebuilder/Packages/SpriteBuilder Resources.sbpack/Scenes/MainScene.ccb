@@ -112,7 +112,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>myAssets/logo.png</string>
+							<string>Best Assets/logo.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -148,6 +148,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

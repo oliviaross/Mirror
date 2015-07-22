@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -233,6 +233,11 @@
 							<dict>
 								<key>UUID</key>
 								<integer>79</integer>
+								<key>animatedProperties</key>
+								<dict>
+									<key>1</key>
+									<dict/>
+								</dict>
 								<key>baseClass</key>
 								<string>CCBFile</string>
 								<key>children</key>
@@ -242,7 +247,7 @@
 								<key>displayName</key>
 								<string>Gate</string>
 								<key>memberVarAssignmentName</key>
-								<string>goDoor</string>
+								<string>gate</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>physicsBody</key>
@@ -258,7 +263,7 @@
 									<key>collisionMask</key>
 									<array/>
 									<key>collisionType</key>
-									<string>goDoor</string>
+									<string>gate</string>
 									<key>cornerRadius</key>
 									<real>0.0</real>
 									<key>density</key>
@@ -357,6 +362,8 @@
 									</dict>
 								</array>
 								<key>selected</key>
+								<true/>
+								<key>seqExpanded</key>
 								<true/>
 							</dict>
 							<dict>
@@ -2472,7 +2479,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>89.438461303710938</real>
+							<real>225.42678833007812</real>
 							<real>29.031166076660156</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3076,7 +3083,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>myAssets/key.png</string>
+							<string>Best Assets/key.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -3361,13 +3368,49 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>4.5</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
 			<real>32</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>-1</integer>
+			<key>length</key>
+			<real>10</real>
+			<key>name</key>
+			<string>DoorOpening</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.0</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>1</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>
