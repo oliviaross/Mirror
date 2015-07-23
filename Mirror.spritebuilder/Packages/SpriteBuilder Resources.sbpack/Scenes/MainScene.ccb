@@ -73,8 +73,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>252</real>
-							<real>94</real>
+							<real>267</real>
+							<real>165</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -98,8 +98,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.40000000596046448</real>
-							<real>0.40000000596046448</real>
+							<real>0.34291476011276245</real>
+							<real>0.24779787659645081</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -148,8 +148,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -183,8 +181,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.65845072269439697</real>
-							<real>0.25312501192092896</real>
+							<real>0.19366197288036346</real>
+							<real>0.33380699157714844</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -208,8 +206,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>0.6526368260383606</real>
+							<real>0.6526368260383606</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -509,8 +507,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.32746478915214539</real>
-							<real>0.25312501192092896</real>
+							<real>0.19366197288036346</real>
+							<real>0.44999998807907104</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -534,8 +532,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>0.62040627002716064</real>
+							<real>0.62040627002716064</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -962,7 +960,7 @@
 		</dict>
 	</array>
 	<key>stageBorder</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>stageColor</key>
 	<integer>0</integer>
 </dict>

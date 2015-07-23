@@ -15,7 +15,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate{
     
     weak var contentNode: CCNode!
     weak var gamePhysicsNode: CCPhysicsNode!
-    weak var cameraNode: CCNode!
+    weak var cameraBoundingBox: CCNode!
 
     
     weak var rightButton: CCButton!
@@ -40,6 +40,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate{
 
       
         userInteractionEnabled = true
+        multipleTouchEnabled = true
         gamePhysicsNode.collisionDelegate = self
         
 //        visualize physics bodies & joints
@@ -56,14 +57,16 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate{
         super.onEnter()
         
         //set up camera with CCActionFollow
-        let actionFollow = CCActionFollow(target: hero, worldBoundary: cameraNode.boundingBox())
+        let actionFollow = CCActionFollow(target: hero, worldBoundary: cameraBoundingBox.boundingBox())
         contentNode.runAction(actionFollow)
     }
     
     func jump(){
+        
         // run jumping annimation while pushing the character up in the air with physics
-        hero.animationManager.runAnimationsForSequenceNamed("Jumping")
-        hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 20))
+            hero.animationManager.runAnimationsForSequenceNamed("Jumping")
+            hero.physicsBody.applyImpulse(CGPoint(x: 0, y: 20))
+        
     }
     
     func backToStart() {
@@ -99,7 +102,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate{
         }
         isRightButtonHilighted = rightButton.highlighted
         isLeftButtonHilighted = leftButton.highlighted
-    }
+        
+        }
     
     func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCSprite!, wall: CCNode!) -> Bool {
             //if the hero is on the far side, more than 1000 points away from the beginning, send them back!

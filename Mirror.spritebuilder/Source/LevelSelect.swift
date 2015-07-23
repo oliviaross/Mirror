@@ -13,6 +13,10 @@ class LevelSelect: CCScene {
     func backToStart() {
         let mainScene = CCBReader.loadAsScene("Scenes/MainScene")
         CCDirector.sharedDirector().presentScene(mainScene)
-        
+    }
+    
+    func goToLevelOne() {
+        let gameplay = CCBReader.loadAsScene("Scenes/Gameplay")
+        CCDirector.sharedDirector().presentScene(gameplay)
     }
 }
